@@ -11,7 +11,8 @@ function Tienda () {
         console.log ("Bievenido al Stock");
         aggCarrito (3)
         aggCarrito (2)
-        aggCarrito (2)
+        aggCarrito (1)
+        aggCarrito (4)
         verCarrito ()
     }
 
