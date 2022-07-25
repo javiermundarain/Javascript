@@ -8,24 +8,24 @@ function Tienda () {
 
     if (comprador == "si"){
         //Contenido ()
-        console.log ("Bievenido al Stock")
+        console.log ("Bievenido al Stock");
         inventario ()
-        
     }
 
-    else (comprador == "no");
-        alert ("Gracias por su visita");
+    else if (comprador == "no"){
+        alert ("Gracias por su visita")
+    }
 }
                                 //APLICACION DE ARRAYS)
     const stock = [
-    {pocion: "Amor", precio: 80, stock: 35},
-    {pocion: "Clarividencia", precio: 150, stock: 12},
-    {pocion: "Muerte Instantanea", precio: 500, stock: 10},
-    {pocion: "Resurreción", precio: 900, stock: 3},
+    {pocion: "Amor ", precio: 80, stock: 35},
+    {pocion: "Clarividencia ", precio: 150, stock: 12},
+    {pocion: "Muerte Instantanea ", precio: 500, stock: 10},
+    {pocion: "Resurreción ", precio: 900, stock: 3},
 ]
 function inventario () {
     for (const item of stock) {
-         console.log ("<h2>" + item.pocion + item.precio + item.stock + "</h2>" )
+         console.log ("<h2>" + item.pocion + item.precio + "</h2>" )
         }
     }
                                 //APLICACION DE ARRAYS)
