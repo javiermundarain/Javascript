@@ -10,6 +10,8 @@ function Tienda () {
         //Contenido ()
         console.log ("Bievenido al Stock");
         aggCarrito (3)
+        aggCarrito (2)
+        aggCarrito (2)
         verCarrito ()
     }
 
