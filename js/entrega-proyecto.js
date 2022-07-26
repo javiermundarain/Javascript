@@ -60,7 +60,7 @@ function Contenido () {
 
     stock.forEach (p => {
         const element = document.createElement ('li')
-        element.innerHTML = `Pocion: ${p.pocion} / <strong> Precio: ${p.precio}<strong> / Stock: ${p.stock}`
+        element.innerHTML = `Poción: ${p.pocion} / <strong> Precio: ${p.precio}<strong> / Stock: ${p.stock}`
         root.append ( element )
 });
                         //APLICACION DE DOM
@@ -68,15 +68,15 @@ function Contenido () {
 
                                     //APLICACION DE PREGUNTAS
 function Preguntas () {
-    let obj1 = parseInt (prompt ("Pocion de Amor"));
-    let obj2 = parseInt (prompt ("Pocion de Clarividencia"));
-    let obj3 = parseInt (prompt ("Pocion de Pocion de Muerte"));
-    let obj4 = parseInt (prompt ("Pocion de Pocion de Resurreción"));
+    let obj1 = parseInt (prompt ("Poción de Amor"));
+    let obj2 = parseInt (prompt ("Poción de Clarividencia"));
+    let obj3 = parseInt (prompt ("Poción de Pocion de Muerte"));
+    let obj4 = parseInt (prompt ("Poción de Pocion de Resurreción"));
 
         let resultado = obj1 + obj2 + obj3 + obj4;
             alert ("Su total de productos es: " + resultado);
 }
                                     //APLICACION DE PREGUNTAS
 
-                                    
 Tienda ()
+Contenido ()
