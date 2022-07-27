@@ -10,12 +10,12 @@ function Tienda () {
 
     if (comprador == "si"){
         Preguntas ()
-        //console.log ("Bievenido al Stock");
-        //aggCarrito (3)
-        //aggCarrito (2)
-        //aggCarrito (1)
-        //aggCarrito (4)
-        //verCarrito ()
+        console.log ("Bievenido al Stock");
+        aggCarrito (3)
+        aggCarrito (2)
+        aggCarrito (1)
+        aggCarrito (4)
+        verCarrito ()
     }
 
     else if (comprador == "no"){
