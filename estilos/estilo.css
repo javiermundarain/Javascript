@@ -1,0 +1,14 @@
+.back {
+    background-color: #533d26;
+    color: whitesmoke;
+}
+
+.back1 {
+    background-color: red;
+    color: blueviolet;
+}
+
+.ficha {
+    border: 1px solid blueviolet;
+    margin: 20px;
+}
