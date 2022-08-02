@@ -46,7 +46,7 @@ function crearBotonRegresar(){
     const botonRegresar = document.createElement ("button");
     botonRegresar.classList.add ("boton-regresar");
     botonRegresar.innerText = "Atras";
-    botonRegresar.addEventListener("Click", () => {
+    botonRegresar.addEventListener("click", () => {
         impFichas(fichas);
     })
     document.getElementById("contenido-fichas").prepend(botonRegresar);
