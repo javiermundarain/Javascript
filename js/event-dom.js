@@ -37,7 +37,14 @@ function mostrarDescripcion(ficha) {
        <p>${ficha.descripcion}</p>
        <h3>${ficha.precio}</h3>
         `;
-}
+ }
+
+
+function comprarP (ficha) {
+    const addButton = document.getElementById ("add")
+    addButton.addEventListener ("click", function (){
+    console.log ("click")
+})}
                             //funcion reaccion al boton
 
                         //funcion reaccion al boton regresar
@@ -69,20 +76,37 @@ function impFichas(fichas) {
        <p>${ficha.minDescripcion}</p>
        <h3>${ficha.precio}</h3>
         `;
+
                             //Aplicacion de Eventos
+
     const botonVerDescripcion = document.createElement ("button");
     botonVerDescripcion.innerText = "Ver Descripción";
     botonVerDescripcion.addEventListener ("click", () =>  {
         mostrarDescripcion(ficha);
         crearBotonRegresar ();
+        comprarB ()
     })
-    divFicha.appendChild(botonVerDescripcion)
-
-                            //Aplicacion de Eventos
-                            
+    divFicha.appendChild(botonVerDescripcion)          
     contenidoFichas.appendChild(divFicha);
-    });
-}
-                            //Insercion del Dom y eventos
 
+    const botonComprar = document.createElement ("button")
+    botonComprar.innerText = "Comprar";
+    botonComprar.addEventListener ("click", function (){
+        console.log ("Click")
+    })
+    divFicha.appendChild (botonComprar)
+    contenidoFichas.appendChild(divFicha);
+
+    const cantP = document.createElement ("input")
+    cantP.innerText = "Cantidad de Productos";
+    cantP.addEventListener ("number", function (){
+        console.log ("Click")
+    })
+    divFicha.appendChild (cantP)
+    contenidoFichas.appendChild(divFicha);
+    })
+}
+                            //Aplicacion de Eventos
+
+                            //Insercion del Dom y eventos
 impFichas(fichas);
