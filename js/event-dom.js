@@ -74,7 +74,7 @@ function impFichas(fichas) {
        <img src="${ficha.imagen}" alt="${ficha.titulo}">
        <h2>${ficha.titulo}</h2>
        <p>${ficha.minDescripcion}</p>
-       <h3>${ficha.precio}</h3>
+       <h3>${ficha.precio}</h3>=
         `;
 
                             //Aplicacion de Eventos
@@ -95,16 +95,7 @@ function impFichas(fichas) {
         console.log ("Click")
     })
     divFicha.appendChild (botonComprar)
-    contenidoFichas.appendChild(divFicha);
-
-    const cantP = document.createElement ("input")
-    cantP.innerText = "Cantidad de Productos";
-    cantP.addEventListener ("number", function (){
-        console.log ("Click")
-    })
-    divFicha.appendChild (cantP)
-    contenidoFichas.appendChild(divFicha);
-    })
+    contenidoFichas.appendChild(divFicha)});
 }
                             //Aplicacion de Eventos
 
