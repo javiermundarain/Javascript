@@ -17,6 +17,18 @@ const precioTotal = document.getElementById ('precioTotal')
 
                 //importante en html
 
+                //modal
+function openmodal(selector){
+    const el = document.querySelector(selector);
+    el.classList.add("modal-opened");
+}
+
+function closemodal(selector){
+    const el = document.querySelector(selector);
+    el.classList.remove("modal-opened");
+}
+                //modal
+
 let carrito = []
 
     document.addEventListener ("DOMContentLoaded", () => {
@@ -93,5 +105,5 @@ const actualizarCarrito = () => {
     })
 
     contadorCarrito.innerText = carrito.length
-    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0)
 }
